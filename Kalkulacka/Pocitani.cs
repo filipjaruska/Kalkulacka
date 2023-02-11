@@ -8,7 +8,7 @@ internal class Pocitani
         Console.Clear();
         while (true)
         {
-            Console.WriteLine("Zadejte číslo: (ex: 9.98) Pro vyhodnocení napište \"stop\".");
+            Console.WriteLine("Pro vyhodnocení napište \"stop\". \n Zadejte číslo: (ex: 9.98)");
             var userAdd = Console.ReadLine();
             if (userAdd.ToLower() == "stop")
                 break;
@@ -24,6 +24,7 @@ internal class Pocitani
             addResult += addNumber;
         }
         Console.WriteLine("Součet vašich čísel je: " + addResult + " Zmáčkněte jakoukoli klávesu pro vrácení se do menu.");
+        //Save(addResult); přidat později
         Console.ReadKey();
     }
 }

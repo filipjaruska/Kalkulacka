@@ -5,11 +5,19 @@ internal class Program : Pocitani
     {
         while (true)
         {
-            Console.WriteLine(@"Hello, World!
+            Console.WriteLine(@"Výtejte v kalkulačce! Autor: Filip Jaruška
 Menu:
-0 for End
-1 for Add
+0 pro ukončení aplikace
+1 pro sčítání čísel
+2 pro odčítání čísel
+3 pro násobení čísel
+4 pro dělení čísel
+5 blablabla
+..
+8 pro historii
+9 pro odstranění části/celé historie
 ");
+            Console.WriteLine("\n Zadejte možnost: ");
             var userImput = Console.ReadKey().KeyChar;
             switch (userImput)
             {
