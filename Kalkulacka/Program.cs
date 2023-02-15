@@ -3,6 +3,7 @@ internal class Program : Pocitani
 {
     private static void Main(string[] args)
     {
+        Console.ForegroundColor = ConsoleColor.White;
         while (true)
         {
             Console.WriteLine(@"Výtejte v kalkulačce! Autor: Filip Jaruška
@@ -12,7 +13,7 @@ Menu:
 2 pro odčítání čísel
 3 pro násobení čísel
 4 pro dělení čísel
-5 blablabla
+5 pro druhou odmocninu
 ..
 8 pro historii
 9 pro odstranění části/celé historie
@@ -26,6 +27,10 @@ Menu:
                     break;
                 case '1':
                     Add();
+                    break;
+                case '2':
+                    break;
+                case '3':
                     break;
             }
             Console.Clear();
